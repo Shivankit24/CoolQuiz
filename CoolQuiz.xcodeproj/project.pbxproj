@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9341BE0622F0E54100E10AE1 /* Questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 9341BE0522F0E54100E10AE1 /* Questions.json */; };
+		9341BE0822F0ECA400E10AE1 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9341BE0722F0ECA400E10AE1 /* Questions.swift */; };
 		93A61DA022F0404B004DFFD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A61D9F22F0404B004DFFD3 /* AppDelegate.swift */; };
-		93A61DA222F0404B004DFFD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A61DA122F0404B004DFFD3 /* ViewController.swift */; };
+		93A61DA222F0404B004DFFD3 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A61DA122F0404B004DFFD3 /* QuizViewController.swift */; };
 		93A61DA522F0404B004DFFD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93A61DA322F0404B004DFFD3 /* Main.storyboard */; };
 		93A61DA722F0404B004DFFD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93A61DA622F0404B004DFFD3 /* Assets.xcassets */; };
 		93A61DAA22F0404B004DFFD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93A61DA822F0404B004DFFD3 /* LaunchScreen.storyboard */; };
 		93A61DB522F0404B004DFFD3 /* CoolQuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A61DB422F0404B004DFFD3 /* CoolQuizTests.swift */; };
+		93D1507E22F0D390000972E0 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D1507D22F0D390000972E0 /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +29,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9341BE0522F0E54100E10AE1 /* Questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Questions.json; sourceTree = SOURCE_ROOT; };
+		9341BE0722F0ECA400E10AE1 /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
 		93A61D9C22F0404B004DFFD3 /* CoolQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A61D9F22F0404B004DFFD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		93A61DA122F0404B004DFFD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		93A61DA122F0404B004DFFD3 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		93A61DA422F0404B004DFFD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		93A61DA622F0404B004DFFD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93A61DA922F0404B004DFFD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +41,7 @@
 		93A61DB022F0404B004DFFD3 /* CoolQuizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoolQuizTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A61DB422F0404B004DFFD3 /* CoolQuizTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolQuizTests.swift; sourceTree = "<group>"; };
 		93A61DB622F0404B004DFFD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93D1507D22F0D390000972E0 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,10 +83,12 @@
 		93A61D9E22F0404B004DFFD3 /* CoolQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				9341BE0522F0E54100E10AE1 /* Questions.json */,
+				93A61DBF22F0421C004DFFD3 /* Model */,
+				93A61DC022F04220004DFFD3 /* View */,
+				93A61DC122F04224004DFFD3 /* Controller */,
+				93D1507C22F0D378000972E0 /* Utilities */,
 				93A61D9F22F0404B004DFFD3 /* AppDelegate.swift */,
-				93A61DA122F0404B004DFFD3 /* ViewController.swift */,
-				93A61DA322F0404B004DFFD3 /* Main.storyboard */,
-				93A61DA622F0404B004DFFD3 /* Assets.xcassets */,
 				93A61DA822F0404B004DFFD3 /* LaunchScreen.storyboard */,
 				93A61DAB22F0404B004DFFD3 /* Info.plist */,
 			);
@@ -94,6 +102,39 @@
 				93A61DB622F0404B004DFFD3 /* Info.plist */,
 			);
 			path = CoolQuizTests;
+			sourceTree = "<group>";
+		};
+		93A61DBF22F0421C004DFFD3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9341BE0722F0ECA400E10AE1 /* Questions.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		93A61DC022F04220004DFFD3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				93A61DA622F0404B004DFFD3 /* Assets.xcassets */,
+				93A61DA322F0404B004DFFD3 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		93A61DC122F04224004DFFD3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				93A61DA122F0404B004DFFD3 /* QuizViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		93D1507C22F0D378000972E0 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				93D1507D22F0D390000972E0 /* CustomButton.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93A61DAA22F0404B004DFFD3 /* LaunchScreen.storyboard in Resources */,
+				9341BE0622F0E54100E10AE1 /* Questions.json in Resources */,
 				93A61DA722F0404B004DFFD3 /* Assets.xcassets in Resources */,
 				93A61DA522F0404B004DFFD3 /* Main.storyboard in Resources */,
 			);
@@ -197,8 +239,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93A61DA222F0404B004DFFD3 /* ViewController.swift in Sources */,
+				93A61DA222F0404B004DFFD3 /* QuizViewController.swift in Sources */,
+				9341BE0822F0ECA400E10AE1 /* Questions.swift in Sources */,
 				93A61DA022F0404B004DFFD3 /* AppDelegate.swift in Sources */,
+				93D1507E22F0D390000972E0 /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,13 +335,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -346,12 +391,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -362,6 +408,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CoolQuiz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -369,7 +416,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.shivankit.CoolQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -379,6 +426,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CoolQuiz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -386,7 +434,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.shivankit.CoolQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -397,6 +445,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CoolQuizTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -405,7 +454,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.shivankit.CoolQuizTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoolQuiz.app/CoolQuiz";
 			};
 			name = Debug;
@@ -417,6 +466,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CoolQuizTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -425,7 +475,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.shivankit.CoolQuizTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoolQuiz.app/CoolQuiz";
 			};
 			name = Release;

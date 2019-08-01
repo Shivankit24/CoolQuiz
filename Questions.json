@@ -1,0 +1,84 @@
+{
+    "Questions": [
+        {
+            "Question": "Everything in React is a?",
+            "Option1": "Module",
+            "Option2": "Component",
+            "Option3": "Package",
+            "Option4": "Class",
+            "correctAnswerIndex": 2
+        },
+        {
+            "Question": "In which directory React Components are saved?",
+            "Option1": "Inside js/components/",
+            "Option2": "Inside vendor/components/",
+            "Option3": "Inside external/components/",
+            "Option4": "Inside vendor/",
+            "correctAnswerIndex": 0
+        },
+        {
+            "Question": "What is Babel?",
+            "Option1": "A transpiler.",
+            "Option2": "An interpreter",
+            "Option3": "A compiler",
+            "Option4": "Both Compiler and Transpiler",
+            "correctAnswerIndex": 3
+        },
+        {
+            "Question": "What is the capital of Spain?",
+            "Option1": "Berlin",
+            "Option2": "Buenos Aires",
+            "Option3": "Madrid",
+            "Option4": "San Juan",
+            "correctAnswerIndex": 2
+        },
+        {
+            "Question": "In React what is used to pass data to a component from outside?",
+            "Option1": "SetState",
+            "Option2": "Render with arguments",
+            "Option3": "Props",
+            "Option4": "PropTypes",
+            "correctAnswerIndex": 2
+        },
+        {
+            "Question": "What type of apps can you build using React Native?",
+            "Option1": "Hybrid apps",
+            "Option2": "HTML5 apps",
+            "Option3": "Mobile web apps",
+            "Option4": "Real mobile apps that are indistinguishable from native apps",
+            "correctAnswerIndex": 3
+        },
+        {
+            "Question": "ReactJS uses _____ to increase performance",
+            "Option1": "1",
+            "Option2": "2",
+            "Option3": "3",
+            "Option4": "4",
+            "correctAnswerIndex": 0
+        },
+        {
+            "Question": "State in react is?",
+            "Option1": "A permanent storage",
+            "Option2": "Internal storage of the component",
+            "Option3": "Both of above",
+            "Option4": "None of the above",
+            "correctAnswerIndex": 1
+        },
+        {
+            "Question": "How do you access a function fetch() from a h1 element in JSX?",
+            "Option1": "<h1>{fetch()}</h1>",
+            "Option2": "<h1>${fetch()}</h1>",
+            "Option3": "<h1>{fetch}</h1>",
+            "Option4": "<h1>${fetch}</h1>",
+            "correctAnswerIndex": 0
+        },
+        {
+            "Question": "Which method in a React Component should you override to stop the component from updating?",
+            "Option1": "willComponentUpdate",
+            "Option2": "shouldComponentUpdate",
+            "Option3": "componentDidUpdate",
+            "Option4": "componentDidMount",
+            "correctAnswerIndex": 1
+        }
+    ]
+}
