@@ -10,13 +10,14 @@ import UIKit
 
 class QuizViewController: UIViewController {
     
-    var questions: [Questions]?
+    //  Properties
+    var questions: [Questions] = []
+    var questionIndex = 0
+    var selectedAnswer = 0
+    var score = 0
 
     //  IBOutlets
     @IBOutlet weak var questionLabel: UILabel!
-    
-    @IBOutlet weak var nextButton: RoundedButton!
-    
     @IBOutlet weak var firstOptionButton: RoundedButton!
     @IBOutlet weak var secondOptionButton: RoundedButton!
     @IBOutlet weak var thirdOptionButton: RoundedButton!
@@ -25,44 +26,38 @@ class QuizViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
-        configureNextButton()
-        questions = readQuestions()
-        setQuestionLabelText()
-        setChoiceButtonOptionsText()
+        questions = allQuestions()
+        updateQuestion()
     }
     
-    func configureNextButton() {
-        nextButton.layer.cornerRadius = nextButton.frame.height / 2
-        nextButton.backgroundColor = UIColor.init(displayP3Red: 28/255, green: 61/255, blue: 83/255, alpha: 1)
-        nextButton.setTitleColor(.white, for: .normal)
+    //  Update question and options
+    func updateQuestion() {
+        if questionIndex < questions.count {
+            questionLabel.text = questions[questionIndex].question
+            firstOptionButton.setTitle(questions[questionIndex].option1, for: .normal)
+            secondOptionButton.setTitle(questions[questionIndex].option2, for: .normal)
+            thirdOptionButton.setTitle(questions[questionIndex].option3, for: .normal)
+            fourthOptionButton.setTitle(questions[questionIndex].option4, for: .normal)
+            
+            selectedAnswer = questions[questionIndex].correctAnswerIndex
+            questionIndex += 1
+        }
     }
     
-    func setChoiceButtonOptionsText() {
-        guard let questions = questions else { return }
-        firstOptionButton.setTitle(questions.first?.option1, for: .normal)
-        secondOptionButton.setTitle(questions.first?.option2, for: .normal)
-        thirdOptionButton.setTitle(questions.first?.option3, for: .normal)
-        fourthOptionButton.setTitle(questions.first?.option4, for: .normal)
-    }
-    
-    func setQuestionLabelText() {
-        guard let questions = questions else { return }
-        let firstQuestion = questions.first?.question
-        questionLabel.text = firstQuestion
-    }
-    
+    /// <#Description#>
     func updateUI() {
-        
+        //TODO: Update UI code
     }
     
-    func readQuestions() -> [Questions] {
+    /// Get questions from json file
+    ///
+    /// - Returns: Array of Questions Struct
+    func allQuestions() -> [Questions] {
         do {
             if let path = Bundle.main.path(forResource: "Questions", ofType: "json") {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
                 let json = try JSONDecoder().decode(Question.self, from: data)
-                let questions = json.questions
-                return questions ?? []
+                return json.questions
             }
         } catch {}
         return []
@@ -70,19 +65,35 @@ class QuizViewController: UIViewController {
     
     //  IBActions
     @IBAction func choicesButtonPressed(_ sender: RoundedButton) {
-        guard let questions = questions else { return }
-        switch sender.tag {
-        case 0:
-            
-        case 1:
-        case 2:
-        case 3:
-        default:
-            break
+        
+        if sender.tag == selectedAnswer {
+            print("correct")
+            score += 10
+        } else {
+            print("wrong")
         }
+        applySpringAnimation(on: sender)
+        updateQuestion()
     }
     
     @IBAction func nextButtonPressed(_ sender: UIButton) {
         
+    }
+    
+    /// Apply spring animation to button
+    ///
+    /// - Parameter sender: Rounded button
+    func applySpringAnimation(on sender: RoundedButton) {
+        sender.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+        UIView.animate(withDuration: 0.5,
+                       delay: 0,
+                       usingSpringWithDamping: CGFloat(0.20),
+                       initialSpringVelocity: CGFloat(8.0),
+                       options: UIView.AnimationOptions.allowUserInteraction,
+                       animations: {
+                        sender.transform = CGAffineTransform.identity
+        },
+                       completion: { Void in()  }
+        )
     }
 }

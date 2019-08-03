@@ -29,7 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9341BE0522F0E54100E10AE1 /* Questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Questions.json; sourceTree = SOURCE_ROOT; };
+		9341BE0522F0E54100E10AE1 /* Questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Questions.json; path = CoolQuiz/Resources/Questions.json; sourceTree = SOURCE_ROOT; };
 		9341BE0722F0ECA400E10AE1 /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
 		93A61D9C22F0404B004DFFD3 /* CoolQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A61D9F22F0404B004DFFD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,11 +83,11 @@
 		93A61D9E22F0404B004DFFD3 /* CoolQuiz */ = {
 			isa = PBXGroup;
 			children = (
-				9341BE0522F0E54100E10AE1 /* Questions.json */,
 				93A61DBF22F0421C004DFFD3 /* Model */,
 				93A61DC022F04220004DFFD3 /* View */,
 				93A61DC122F04224004DFFD3 /* Controller */,
 				93D1507C22F0D378000972E0 /* Utilities */,
+				93F4C20D22F6139A002D7846 /* Resources */,
 				93A61D9F22F0404B004DFFD3 /* AppDelegate.swift */,
 				93A61DA822F0404B004DFFD3 /* LaunchScreen.storyboard */,
 				93A61DAB22F0404B004DFFD3 /* Info.plist */,
@@ -135,6 +135,14 @@
 				93D1507D22F0D390000972E0 /* CustomButton.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		93F4C20D22F6139A002D7846 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9341BE0522F0E54100E10AE1 /* Questions.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
