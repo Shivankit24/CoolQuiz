@@ -16,6 +16,9 @@
 		93A61DAA22F0404B004DFFD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93A61DA822F0404B004DFFD3 /* LaunchScreen.storyboard */; };
 		93A61DB522F0404B004DFFD3 /* CoolQuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A61DB422F0404B004DFFD3 /* CoolQuizTests.swift */; };
 		93D1507E22F0D390000972E0 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D1507D22F0D390000972E0 /* CustomButton.swift */; };
+		93F4C20F22F7672E002D7846 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F4C20E22F7672E002D7846 /* Constants.swift */; };
+		93F4C21122F76800002D7846 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F4C21022F76800002D7846 /* UIColor+Extension.swift */; };
+		93F4C21322F76E3E002D7846 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F4C21222F76E3E002D7846 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,9 @@
 		93A61DB422F0404B004DFFD3 /* CoolQuizTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolQuizTests.swift; sourceTree = "<group>"; };
 		93A61DB622F0404B004DFFD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93D1507D22F0D390000972E0 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		93F4C20E22F7672E002D7846 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		93F4C21022F76800002D7846 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		93F4C21222F76E3E002D7846 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +92,7 @@
 				93A61DBF22F0421C004DFFD3 /* Model */,
 				93A61DC022F04220004DFFD3 /* View */,
 				93A61DC122F04224004DFFD3 /* Controller */,
-				93D1507C22F0D378000972E0 /* Utilities */,
+				93D1507C22F0D378000972E0 /* Components */,
 				93F4C20D22F6139A002D7846 /* Resources */,
 				93A61D9F22F0404B004DFFD3 /* AppDelegate.swift */,
 				93A61DA822F0404B004DFFD3 /* LaunchScreen.storyboard */,
@@ -125,22 +131,25 @@
 			isa = PBXGroup;
 			children = (
 				93A61DA122F0404B004DFFD3 /* QuizViewController.swift */,
+				93F4C21222F76E3E002D7846 /* ResultViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		93D1507C22F0D378000972E0 /* Utilities */ = {
+		93D1507C22F0D378000972E0 /* Components */ = {
 			isa = PBXGroup;
 			children = (
 				93D1507D22F0D390000972E0 /* CustomButton.swift */,
 			);
-			path = Utilities;
+			path = Components;
 			sourceTree = "<group>";
 		};
 		93F4C20D22F6139A002D7846 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				9341BE0522F0E54100E10AE1 /* Questions.json */,
+				93F4C20E22F7672E002D7846 /* Constants.swift */,
+				93F4C21022F76800002D7846 /* UIColor+Extension.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -247,8 +256,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93F4C20F22F7672E002D7846 /* Constants.swift in Sources */,
 				93A61DA222F0404B004DFFD3 /* QuizViewController.swift in Sources */,
+				93F4C21322F76E3E002D7846 /* ResultViewController.swift in Sources */,
 				9341BE0822F0ECA400E10AE1 /* Questions.swift in Sources */,
+				93F4C21122F76800002D7846 /* UIColor+Extension.swift in Sources */,
 				93A61DA022F0404B004DFFD3 /* AppDelegate.swift in Sources */,
 				93D1507E22F0D390000972E0 /* CustomButton.swift in Sources */,
 			);
@@ -414,7 +426,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CoolQuiz/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -423,6 +436,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shivankit.CoolQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -432,7 +446,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CoolQuiz/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -441,6 +456,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shivankit.CoolQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

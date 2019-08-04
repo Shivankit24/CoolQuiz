@@ -19,13 +19,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HCG-sj-qul">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="358.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="313.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundGradient" translatesAutoresizingMaskIntoConstraints="NO" id="PCW-WU-QV5">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="358.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="313.5"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHV-j1-AY0">
-                                        <rect key="frame" x="164" y="167" width="86" height="24"/>
+                                        <rect key="frame" x="164" y="145" width="86" height="24"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -44,71 +44,68 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="SHC-Qq-Bbq">
-                                <rect key="frame" x="20.5" y="428.5" width="373" height="245"/>
+                                <rect key="frame" x="20.5" y="363.5" width="373" height="260"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWl-QU-edk" customClass="RoundedButton" customModule="CoolQuiz" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="373" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="54"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="KUT-HX-lIt"/>
-                                        </constraints>
-                                        <state key="normal" title="Button">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
+                                        <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="choicesButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k58-GC-8YX"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y0X-VM-hwd" customClass="RoundedButton" customModule="CoolQuiz" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="65" width="373" height="50"/>
+                                        <rect key="frame" x="0.0" y="69" width="373" height="53.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="MFY-Fi-cjU"/>
-                                        </constraints>
-                                        <state key="normal" title="Button">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
+                                        <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="choicesButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="htz-FY-GUJ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qhk-hL-Ljh" customClass="RoundedButton" customModule="CoolQuiz" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="130" width="373" height="50"/>
+                                        <rect key="frame" x="0.0" y="137.5" width="373" height="54"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="OcH-UB-9JN"/>
-                                        </constraints>
-                                        <state key="normal" title="Button">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
+                                        <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="choicesButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sw7-au-bdu"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvp-y2-kyg" customClass="RoundedButton" customModule="CoolQuiz" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="195" width="373" height="50"/>
+                                        <rect key="frame" x="0.0" y="206.5" width="373" height="53.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="7iW-LY-hbM"/>
-                                        </constraints>
-                                        <state key="normal" title="Button">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
+                                        <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="choicesButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ijb-uW-UrA"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J09-Oa-fCW" customClass="RoundedButton" customModule="CoolQuiz" customModuleProvider="target">
+                                <rect key="frame" x="124" y="782" width="166" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="sef-gW-4ce"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B8W-P6-afi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Qhk-hL-Ljh" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.06" id="1vo-4m-mqw"/>
                             <constraint firstItem="HCG-sj-qul" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6jZ-te-gXC"/>
+                            <constraint firstItem="y0X-VM-hwd" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.06" id="7BU-9k-Sb8"/>
+                            <constraint firstItem="rvp-y2-kyg" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.06" id="AS8-rp-bWE"/>
+                            <constraint firstItem="yWl-QU-edk" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.06" id="Kqj-wc-q8A"/>
                             <constraint firstItem="HCG-sj-qul" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="LlD-S1-COj"/>
-                            <constraint firstItem="SHC-Qq-Bbq" firstAttribute="top" secondItem="HCG-sj-qul" secondAttribute="bottom" constant="70" id="QV2-UR-lTv"/>
+                            <constraint firstItem="SHC-Qq-Bbq" firstAttribute="top" secondItem="HCG-sj-qul" secondAttribute="bottom" constant="50" id="QV2-UR-lTv"/>
                             <constraint firstItem="SHC-Qq-Bbq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S3g-40-4cP"/>
-                            <constraint firstItem="HCG-sj-qul" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="WpC-VK-j2q"/>
+                            <constraint firstItem="HCG-sj-qul" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.35" id="WpC-VK-j2q"/>
                             <constraint firstItem="SHC-Qq-Bbq" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="dXg-EN-xs0"/>
+                            <constraint firstItem="J09-Oa-fCW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hbv-ZX-4hw"/>
+                            <constraint firstItem="J09-Oa-fCW" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.4" id="n6b-Gs-0Js"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="J09-Oa-fCW" secondAttribute="bottom" constant="50" id="rLl-Ks-WSL"/>
                             <constraint firstItem="HCG-sj-qul" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="rqr-F6-as1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -116,14 +113,70 @@
                     <connections>
                         <outlet property="firstOptionButton" destination="yWl-QU-edk" id="xfy-ZO-RBM"/>
                         <outlet property="fourthOptionButton" destination="rvp-y2-kyg" id="WgP-yY-3T0"/>
+                        <outlet property="nextButton" destination="J09-Oa-fCW" id="EOl-cA-9rx"/>
                         <outlet property="questionLabel" destination="SHV-j1-AY0" id="BKV-ja-YVi"/>
                         <outlet property="secondOptionButton" destination="y0X-VM-hwd" id="6hV-bn-Lil"/>
                         <outlet property="thirdOptionButton" destination="Qhk-hL-Ljh" id="HmU-la-7xM"/>
+                        <segue destination="mG5-VJ-RaW" kind="show" identifier="pushToResultScreen" id="qV1-8I-kzX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="qev-ew-V0T">
+            <objects>
+                <viewController id="mG5-VJ-RaW" customClass="ResultViewController" customModule="CoolQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RT1-8h-Yyz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your final score is:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOt-Sa-x3X">
+                                <rect key="frame" x="62" y="144" width="290" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRF-DO-nbg">
+                                <rect key="frame" x="41.5" y="403" width="331" height="90"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKW-N5-uVB" customClass="RoundedButton" customModule="CoolQuiz" customModuleProvider="target">
+                                <rect key="frame" x="145" y="776" width="124" height="36"/>
+                                <state key="normal" title="Restart Quiz"/>
+                                <connections>
+                                    <action selector="restartButtonPressed:" destination="mG5-VJ-RaW" eventType="touchUpInside" id="8sI-Z3-UJo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DOt-Sa-x3X" firstAttribute="centerX" secondItem="RT1-8h-Yyz" secondAttribute="centerX" id="4Ee-Sb-VUz"/>
+                            <constraint firstItem="TRF-DO-nbg" firstAttribute="width" secondItem="RT1-8h-Yyz" secondAttribute="width" multiplier="0.8" id="H8Y-AH-bV0"/>
+                            <constraint firstItem="DOt-Sa-x3X" firstAttribute="width" secondItem="RT1-8h-Yyz" secondAttribute="width" multiplier="0.7" id="IuG-Wi-qx0"/>
+                            <constraint firstItem="HiK-GB-MEV" firstAttribute="bottom" secondItem="fKW-N5-uVB" secondAttribute="bottom" constant="50" id="XMk-hp-kaA"/>
+                            <constraint firstItem="DOt-Sa-x3X" firstAttribute="top" secondItem="HiK-GB-MEV" secondAttribute="top" constant="100" id="XXZ-g6-jpM"/>
+                            <constraint firstItem="TRF-DO-nbg" firstAttribute="centerY" secondItem="RT1-8h-Yyz" secondAttribute="centerY" id="cr6-cM-Xq7"/>
+                            <constraint firstItem="TRF-DO-nbg" firstAttribute="height" secondItem="RT1-8h-Yyz" secondAttribute="height" multiplier="0.1" id="gUp-qa-MQb"/>
+                            <constraint firstItem="fKW-N5-uVB" firstAttribute="height" secondItem="RT1-8h-Yyz" secondAttribute="height" multiplier="0.04" id="j0D-y6-40v"/>
+                            <constraint firstItem="TRF-DO-nbg" firstAttribute="centerX" secondItem="RT1-8h-Yyz" secondAttribute="centerX" id="j3E-dm-vIJ"/>
+                            <constraint firstItem="DOt-Sa-x3X" firstAttribute="height" secondItem="RT1-8h-Yyz" secondAttribute="height" multiplier="0.05" id="qWq-MP-Tyd"/>
+                            <constraint firstItem="fKW-N5-uVB" firstAttribute="width" secondItem="RT1-8h-Yyz" secondAttribute="width" multiplier="0.3" id="rhB-ER-Mhn"/>
+                            <constraint firstItem="fKW-N5-uVB" firstAttribute="centerX" secondItem="RT1-8h-Yyz" secondAttribute="centerX" id="xVB-uY-ha8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HiK-GB-MEV"/>
+                    </view>
+                    <connections>
+                        <outlet property="restartButton" destination="fKW-N5-uVB" id="g8a-UA-4Gl"/>
+                        <outlet property="scoreLabel" destination="TRF-DO-nbg" id="oCH-N6-7Je"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VIW-tY-G6y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="905.79710144927549" y="136.60714285714286"/>
         </scene>
     </scenes>
     <resources>

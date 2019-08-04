@@ -6,7 +6,7 @@
             "Option2": "Component",
             "Option3": "Package",
             "Option4": "Class",
-            "correctAnswerIndex": 2
+            "correctAnswerIndex": 1
         },
         {
             "Question": "In which directory React Components are saved?",
@@ -18,7 +18,7 @@
         },
         {
             "Question": "What is Babel?",
-            "Option1": "A transpiler.",
+            "Option1": "A transpiler",
             "Option2": "An interpreter",
             "Option3": "A compiler",
             "Option4": "Both Compiler and Transpiler",
@@ -45,15 +45,15 @@
             "Option1": "Hybrid apps",
             "Option2": "HTML5 apps",
             "Option3": "Mobile web apps",
-            "Option4": "Real mobile apps that are indistinguishable from native apps",
+            "Option4": "Native mobile apps",
             "correctAnswerIndex": 3
         },
         {
             "Question": "ReactJS uses _____ to increase performance",
-            "Option1": "1",
-            "Option2": "2",
-            "Option3": "3",
-            "Option4": "4",
+            "Option1": "Virtual DOM",
+            "Option2": "Original DOM",
+            "Option3": "Both of above",
+            "Option4": "None of the above",
             "correctAnswerIndex": 0
         },
         {
